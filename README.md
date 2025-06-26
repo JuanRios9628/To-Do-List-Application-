@@ -1,8 +1,8 @@
 # To-Do List Manager (Python CLI App)
 
-##Main Features
+## Main Features
 
--  Add tasks with:
+- Add tasks with:
   - Name  
   - Category (e.g., School, Work, Health...)  
   - Priority (🔥 Very High - 🟣 Very Low)  
@@ -12,11 +12,11 @@
 - Display progress with a pie chart (`matplotlib`)  
 - Mark tasks as completed  
 - Simulate sending a task via email  
-   Smart suggestions for important tasks and category summaries  
+- Smart suggestions for important tasks and category summaries  
 
 ---
 
-##Special Logic
+## Special Logic
 
 - If a task already exists and is added again, its **priority increases automatically** (i.e., the number decreases from 3 to 2).  
 - A **progress percentage** is displayed using a pie chart to show completed vs. pending tasks.  
@@ -25,7 +25,7 @@
 
 ---
 
-##Code Structure
+## Code Structure
 
 The program is divided into the following sections:
 
