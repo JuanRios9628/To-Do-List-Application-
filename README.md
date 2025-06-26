@@ -33,24 +33,6 @@ The program is divided into the following sections:
    - `simulate_send_email()`: Simulate sending task via email.
    - `suggest_task()`: Show recommendations and category summary.
 4. **Interactive Menu** using a `while` loop.
-
-🛠️ Requirements
-- Python 3.x
-- `matplotlib` library (for charts)
-You can install matplotlib using:
-```bash
-pip install matplotlib
-How to Run
-Clone the repository:
-
-bash
-Copiar
-Editar
-git clone https://github.com/your_username/to-do-list-python.git
-cd to-do-list-python
-Run the main script:
-
-bash
-Copiar
-Editar
-python your_filename.py
+   
+We are beginner programmers working together for the first time.
+Each of us helped write code, test it, and improve the app step by step.
