@@ -5,7 +5,7 @@
 - Add tasks with:
   - Name  
   - Category (e.g., School, Work, Health...)  
-  - Priority (🔥 Urgently - 🟣 Optional)  
+  - Priority (🔥 Urgent - 🟣 Optional)  
   - Deadline  
   - Frequency (daily, weekly, monthly, none)  
 - View tasks sorted by priority and due date  
