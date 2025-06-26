@@ -1,4 +1,4 @@
-# 📝 To-Do List Manager (Python CLI App)
+# To-Do List Manager (Python CLI App)
 
  Main Features
 - Add tasks with:
@@ -13,14 +13,14 @@
 -  Simulate sending a task via email
 -  Smart suggestions for important tasks and category summaries
 
-🧠 Special Logic
+Special Logic
 
 - If a task already exists and is added again, its **priority increases automatically** (i.e., the number decreases from 3 to 2).
 - A **progress percentage bar** is shown with a pie chart to visualize overall task status.
 - Tasks are **automatically sorted** by priority and deadline.
 - Suggestions help users focus on high-priority tasks with approaching deadlines.
 
-📂 Code Structure
+Code Structure
 
 The program is divided into the following sections:
 
@@ -40,7 +40,7 @@ The program is divided into the following sections:
 You can install matplotlib using:
 ```bash
 pip install matplotlib
-🚀 How to Run
+How to Run
 Clone the repository:
 
 bash
