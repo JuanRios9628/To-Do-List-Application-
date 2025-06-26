@@ -58,9 +58,9 @@ def add_task():
             if task['priority'] > 1:
                 task['priority'] -= 1
                 task['priority_label'] = PRIORITY_LABELS[task['priority']]
-                print(f"⚠️ Task already exists. Increased its priority to {task['priority']}.")
+                print(f" Task already exists. Increased its priority to {task['priority']}.")
             else:
-                print("⚠️ Task already exists and is already at the highest priority.")
+                print(" Task already exists and is already at the highest priority.")
             return
 
     category = choose_category()
@@ -95,7 +95,7 @@ def add_task():
         'completed': False
     }
     tasks.append(task)
-    print(f"✅ Task '{name}' added successfully!")
+    print(f" Task '{name}' added successfully!")
 
 def view_tasks():
     if not tasks:
@@ -103,10 +103,10 @@ def view_tasks():
         return
 
     sorted_tasks = sorted(tasks, key=lambda x: (x['priority'], x['deadline']))
-    print("\n📋 Tasks:")
+    print("\n Tasks:")
     completed = 0
     for i, t in enumerate(sorted_tasks, 1):
-        status = "✔️" if t['completed'] else "❌"
+        status = "✔" if t['completed'] else "X"
         print(f"{i}. {t['name']} | {t['priority_label']} | Due: {t['deadline']} | {t['category']} | {t['frequency']} [{status}]")
         if t['completed']:
             completed += 1
@@ -114,7 +114,7 @@ def view_tasks():
     total = len(tasks)
     pending = total - completed
     if total > 0:
-        print(f"\n📊 Progress: {completed/total*100:.1f}% Completed")
+        print(f"\n Progress: {completed/total*100:.1f}% Completed")
         plt.pie([completed, pending], labels=['Completed', 'Pending'], autopct='%1.1f%%', colors=['#4CAF50', '#FFC107'], startangle=90)
         plt.axis('equal')
         plt.title("Task Completion Progress")
@@ -126,7 +126,7 @@ def mark_task_completed():
         num = int(input("Enter the task number to mark as completed: "))
         if 1 <= num <= len(tasks):
             tasks[num-1]['completed'] = True
-            print(f"✅ Task '{tasks[num-1]['name']}' marked as completed.")
+            print(f" Task '{tasks[num-1]['name']}' marked as completed.")
         else:
             print("Invalid task number.")
     except ValueError:
@@ -139,9 +139,9 @@ def simulate_send_email():
         if 1 <= num <= len(tasks):
             email = input("Enter recipient's email: ").strip()
             if "@" in email:
-                print(f"📨 Simulating sending '{tasks[num-1]['name']}' to {email}... ✅ Email sent!")
+                print(f" Simulating sending '{tasks[num-1]['name']}' to {email}...  Email sent!")
             else:
-                print("❌ Invalid email format.")
+                print(" Invalid email format.")
         else:
             print("Invalid task number.")
     except ValueError:
